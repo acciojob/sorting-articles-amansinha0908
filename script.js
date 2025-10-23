@@ -24,5 +24,5 @@
     const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
     // Display in the DOM
-    document.querySelector('#band').innerHTML = 
+    document.querySelector('#bands').innerHTML = 
       sortedBands.map(band => `<li>${band}</li>`).join('');
